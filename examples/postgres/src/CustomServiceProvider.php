@@ -1,6 +1,6 @@
 <?php
 
-namespace AbuseIO\Findcontact\Custom;
+namespace AbuseIO\FindContact\Custom;
 
 use Illuminate\Support\ServiceProvider;
 
