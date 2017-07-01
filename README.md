@@ -12,11 +12,17 @@ If you're going to talk against an API, copy the php files from `examples/templa
 ```bash
 cp vendor/abuseio/findcontact-custom/examples/template/config/Custom.php vendor/abuseio/findcontact-custom/config/
 cp vendor/abuseio/findcontact-custom/examples/template/src/Custom.php vendor/abuseio/findcontact-custom/src/
+cp vendor/abuseio/findcontact-custom/examples/postgres/src/CustomServiceProvider.php vendor/abuseio/findcontact-custom/src/
 ```
 
 Now delete the example folder:
 ```bash
 rm -r vendor/abuseio/findcontact-custom/examples
+```
+
+Add the following line to `providers` array in the file config/app.php:
+```php
+'AbuseIO\FindContact\Custom\CustomServiceProvider'
 ```
 
 You can now write your own code within the 'getContactBy*' methods.
